@@ -24,6 +24,18 @@ See the end of this file for further copyright and license information.
 
 .. contents::
 
+版本介绍
+-------------------
+Python的某个二次元解释器报错版
+这是一个修改版的CPython，它的错误消息输出带有二次元口气。例如，当你试图除以零时，它会返回：
+
+.. code-block:: python
+
+    >>> 1/0
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ZeroDivisionError: 笨蛋才会把0放到除数吧!
+
 General Information
 -------------------
 
