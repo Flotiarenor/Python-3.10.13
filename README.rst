@@ -63,6 +63,7 @@ Python的某个二次元解释器报错版
 生成这段16进制编码的方式可以简单的通过一串python代码实现
 
 .. code-block:: python
+
     print(input().encode('utf-8').hex())
 
 接下来的项目目标以及一些想说的
