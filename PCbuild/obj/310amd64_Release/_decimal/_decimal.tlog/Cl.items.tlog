@@ -1,0 +1,15 @@
+D:\project\Python-3.10.13\Modules\_decimal\_decimal.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\_decimal.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\basearith.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\basearith.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\constants.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\constants.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\context.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\context.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\convolute.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\convolute.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\crt.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\crt.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\difradix2.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\difradix2.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\fnt.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\fnt.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\fourstep.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\fourstep.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\io.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\io.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\mpalloc.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\mpalloc.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\mpdecimal.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\mpdecimal.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\numbertheory.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\numbertheory.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\sixstep.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\sixstep.obj
+D:\project\Python-3.10.13\Modules\_decimal\libmpdec\transpose.c;D:\project\Python-3.10.13\PCbuild\obj\310amd64_Release\_decimal\transpose.obj

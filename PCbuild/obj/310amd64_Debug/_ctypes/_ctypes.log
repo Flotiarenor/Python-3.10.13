@@ -1,0 +1,29 @@
+﻿  _ctypes.c
+  callbacks.c
+  callproc.c
+  cfield.c
+  malloc_closure.c
+  stgdict.c
+  正在生成代码...
+  _ctypes.vcxproj -> D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\amd64\_ctypes_d.pyd
+  The argument 'C:\Program Files\vcpkg\vcpkg\scripts\buildsystems\msbuild\applocal.ps1' is not recognized as the name of a script file. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+  
+  Usage: pwsh[.exe] [-Login] [[-File] <filePath> [args]]
+                    [-Command { - | <script-block> [-args <arg-array>]
+                                  | <string> [<CommandParameters>] } ]
+                    [-CommandWithArgs <string> [<CommandParameters>]
+                    [-ConfigurationName <string>] [-ConfigurationFile <filePath>]
+                    [-CustomPipeName <string>] [-EncodedCommand <Base64EncodedCommand>]
+                    [-ExecutionPolicy <ExecutionPolicy>] [-InputFormat {Text | XML}]
+                    [-Interactive] [-MTA] [-NoExit] [-NoLogo] [-NonInteractive] [-NoProfile]
+                    [-NoProfileLoadTime] [-OutputFormat {Text | XML}] 
+                    [-SettingsFile <filePath>] [-SSHServerMode] [-STA] 
+                    [-Version] [-WindowStyle <style>] 
+                    [-WorkingDirectory <directoryPath>]
+  
+         pwsh[.exe] -h | -Help | -? | /?
+  
+  PowerShell Online Help https://aka.ms/powershell-docs
+  
+  All parameters are case-insensitive.
+C:\Program Files\vcpkg\vcpkg\scripts\buildsystems\msbuild\vcpkg.targets(247,5): warning : [vcpkg] Failed to gather app local DLL dependencies, program may not run. Set VcpkgApplocalDeps to false in your project file to suppress this warning. PowerShell arguments: -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\amd64\_ctypes_d.pyd" "C:\Program Files\vcpkg\vcpkg\installed\x64-windows\bin" "D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\obj\310amd64_Debug\_ctypes\_ctypes.tlog\_ctypes.write.1u.tlog" "D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\obj\310amd64_Debug\_ctypes\vcpkg.applocal.log"

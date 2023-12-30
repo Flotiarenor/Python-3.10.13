@@ -1,0 +1,229 @@
+﻿  Killing any running python_d.exe instances...
+  Generated sources are up to date
+  Getting build info from git
+  fatal: not a git repository (or any of the parent directories): .git
+D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\pythoncore.vcxproj(532,5): warning MSB3073: 命令“git name-rev --name-only HEAD > "D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\obj\310amd64_Debug\pythoncore\gitbranch.txt"”已退出，代码为 128。
+  fatal: not a git repository (or any of the parent directories): .git
+D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\pythoncore.vcxproj(533,5): warning MSB3073: 命令“git rev-parse --short HEAD > "D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\obj\310amd64_Debug\pythoncore\gitversion.txt"”已退出，代码为 128。
+  fatal: not a git repository (or any of the parent directories): .git
+D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\pythoncore.vcxproj(534,5): warning MSB3073: 命令“git describe --all --always --dirty > "D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\obj\310amd64_Debug\pythoncore\gittag.txt"”已退出，代码为 128。
+  Building : 
+  _abc.c
+  _bisectmodule.c
+  blake2b_impl.c
+  blake2module.c
+  blake2s_impl.c
+  _codecsmodule.c
+  _collectionsmodule.c
+  _contextvarsmodule.c
+  _csv.c
+  _datetimemodule.c
+  _functoolsmodule.c
+  _heapqmodule.c
+  _iomodule.c
+  bufferedio.c
+  bytesio.c
+  fileio.c
+  iobase.c
+  stringio.c
+  textio.c
+  winconsoleio.c
+  正在生成代码...
+  正在编译...
+  _json.c
+  _localemodule.c
+  _lsprof.c
+  _math.c
+  _opcode.c
+  _operator.c
+  _pickle.c
+  _randommodule.c
+  sha3module.c
+  _sre.c
+  _stat.c
+  _statisticsmodule.c
+  _struct.c
+  _threadmodule.c
+  _tracemalloc.c
+  _weakref.c
+  _winapi.c
+  _xxsubinterpretersmodule.c
+  arraymodule.c
+  atexitmodule.c
+  正在生成代码...
+  正在编译...
+  audioop.c
+  binascii.c
+  _codecs_cn.c
+  _codecs_hk.c
+  _codecs_iso2022.c
+  _codecs_jp.c
+  _codecs_kr.c
+  _codecs_tw.c
+  multibytecodec.c
+  cmathmodule.c
+  errnomodule.c
+  faulthandler.c
+  gcmodule.c
+  itertoolsmodule.c
+  main.c
+  mathmodule.c
+  md5module.c
+  mmapmodule.c
+  posixmodule.c
+  sha1module.c
+  正在生成代码...
+  正在编译...
+  sha256module.c
+  sha512module.c
+  signalmodule.c
+  symtablemodule.c
+  timemodule.c
+  xxsubtype.c
+  zlibmodule.c
+  abstract.c
+  accu.c
+  boolobject.c
+  bytearrayobject.c
+  bytes_methods.c
+  bytesobject.c
+  call.c
+  capsule.c
+  cellobject.c
+  classobject.c
+  codeobject.c
+  complexobject.c
+  descrobject.c
+  正在生成代码...
+  正在编译...
+  dictobject.c
+  enumobject.c
+  exceptions.c
+  fileobject.c
+  floatobject.c
+  frameobject.c
+  funcobject.c
+  genericaliasobject.c
+  genobject.c
+  interpreteridobject.c
+  iterobject.c
+  listobject.c
+  longobject.c
+  memoryobject.c
+  methodobject.c
+  moduleobject.c
+  namespaceobject.c
+  object.c
+  obmalloc.c
+  odictobject.c
+  正在生成代码...
+  正在编译...
+  picklebufobject.c
+  rangeobject.c
+  setobject.c
+  sliceobject.c
+  structseq.c
+  tupleobject.c
+  typeobject.c
+  unicodectype.c
+  unicodeobject.c
+D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\Objects\unicodeobject.c(16442,9): warning C4013: “check_string”未定义；假设外部返回 int
+D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\Objects\unicodeobject.c(16510,24): warning C4244: “=”: 从“long”转换到“char”，可能丢失数据
+  unionobject.c
+  weakrefobject.c
+  config.c
+  dl_nt.c
+  getpathp.c
+  msvcrtmodule.c
+  winreg.c
+  myreadline.c
+  parser.c
+  peg_api.c
+  pegen.c
+  正在生成代码...
+  正在编译...
+  string_parser.c
+  token.c
+  tokenizer.c
+  Python-ast.c
+  _warnings.c
+  asdl.c
+  ast.c
+  ast_opt.c
+  ast_unparse.c
+  bltinmodule.c
+  bootstrap_hash.c
+  ceval.c
+  codecs.c
+  compile.c
+  context.c
+  dtoa.c
+  dynload_win.c
+  errors.c
+  fileutils.c
+  formatter_unicode.c
+  正在生成代码...
+  正在编译...
+  frozen.c
+  future.c
+  getargs.c
+  getcompiler.c
+  getcopyright.c
+  getopt.c
+  getplatform.c
+  getversion.c
+  hamt.c
+  hashtable.c
+  import.c
+  importdl.c
+  initconfig.c
+  marshal.c
+  modsupport.c
+  mysnprintf.c
+  mystrtoul.c
+  pathconfig.c
+  preconfig.c
+  pyarena.c
+  正在生成代码...
+  正在编译...
+  pyctype.c
+  pyhash.c
+  pylifecycle.c
+  pymath.c
+  pystate.c
+  pystrcmp.c
+  pystrhex.c
+  pystrtod.c
+  pythonrun.c
+  pytime.c
+  structmember.c
+  suggestions.c
+  symtable.c
+  sysmodule.c
+  thread.c
+  traceback.c
+  正在生成代码...
+  getbuildinfo.c
+    正在创建库 D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\amd64\python310_d.lib 和对象 D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\amd64\python310_d.exp
+  pythoncore.vcxproj -> D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\amd64\python310_d.dll
+  The argument 'C:\Program Files\vcpkg\vcpkg\scripts\buildsystems\msbuild\applocal.ps1' is not recognized as the name of a script file. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+  
+  Usage: pwsh[.exe] [-Login] [[-File] <filePath> [args]]
+                    [-Command { - | <script-block> [-args <arg-array>]
+                                  | <string> [<CommandParameters>] } ]
+                    [-CommandWithArgs <string> [<CommandParameters>]
+                    [-ConfigurationName <string>] [-ConfigurationFile <filePath>]
+                    [-CustomPipeName <string>] [-EncodedCommand <Base64EncodedCommand>]
+                    [-ExecutionPolicy <ExecutionPolicy>] [-InputFormat {Text | XML}]
+                    [-Interactive] [-MTA] [-NoExit] [-NoLogo] [-NonInteractive] [-NoProfile]
+                    [-NoProfileLoadTime] [-OutputFormat {Text | XML}] 
+                    [-SettingsFile <filePath>] [-SSHServerMode] [-STA] 
+                    [-Version] [-WindowStyle <style>] 
+                    [-WorkingDirectory <directoryPath>]
+  
+         pwsh[.exe] -h | -Help | -? | /?
+  
+  PowerShell Online Help https://aka.ms/powershell-docs
+  
+  All parameters are case-insensitive.
+C:\Program Files\vcpkg\vcpkg\scripts\buildsystems\msbuild\vcpkg.targets(247,5): warning : [vcpkg] Failed to gather app local DLL dependencies, program may not run. Set VcpkgApplocalDeps to false in your project file to suppress this warning. PowerShell arguments: -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\amd64\python310_d.dll" "C:\Program Files\vcpkg\vcpkg\installed\x64-windows\bin" "D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\obj\310amd64_Debug\pythoncore\pythoncore.tlog\pythoncore.write.1u.tlog" "D:\project\Python-3.10.13 - 副本 (2) - 副本 - 副本 - 副本 - 副本\PCbuild\obj\310amd64_Debug\pythoncore\vcpkg.applocal.log"
