@@ -38,6 +38,7 @@ Python的某个二次元解释器报错版
 
 修改了_PyErr_PrintEx函数用于替换
 在unicodeobject.c增加了这几个函数
+
 .. code-block:: c
 
 	PyAPI_FUNC(PyObject*) PyUnicode_Load_Replace(PyObject* pyunic);//替换的主要函数
