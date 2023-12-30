@@ -1171,6 +1171,8 @@ PyAPI_FUNC(Py_ssize_t) _PyUnicode_ScanIdentifier(PyObject *);
 
 PyAPI_FUNC(PyObject*) PyUnicode_Load_Replace(PyObject* pyunic);
 
+PyAPI_FUNC(const char*) get_original_str(PyObject* pyunic, int* flag);
+
 PyAPI_FUNC(PyObject*) process_data(PyObject* replaced_data, int flag, PyObject* pyunic);
 
 typedef struct { char* key; char* value; } KeyValuePair_Err;

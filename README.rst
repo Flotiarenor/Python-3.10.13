@@ -31,10 +31,10 @@ Python的某个二次元解释器报错版
 
 .. code-block:: python
 
-    >>> 1/0
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    ZeroDivisionError: 笨蛋才会把0放到除数吧!
+	>>> 1/0
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	ZeroDivisionError: 笨蛋才会把0放到除数吧!
 
 修改了_PyErr_PrintEx函数用于替换
 在unicodeobject.c增加了这几个函数
@@ -42,6 +42,8 @@ Python的某个二次元解释器报错版
 .. code-block:: c
 
 	PyAPI_FUNC(PyObject*) PyUnicode_Load_Replace(PyObject* pyunic);//替换的主要函数
+
+	PyAPI_FUNC(const char*) get_original_str(PyObject* pyunic, int* flag);//元组和字符判断
 
 	PyAPI_FUNC(PyObject*) process_data(PyObject* replaced_data, int flag, PyObject* pyunic);//元组和字符数据处理
 
@@ -56,15 +58,15 @@ Python的某个二次元解释器报错版
 
 文本文档的格式是形如::
 
-    division by zero,e7aca8e89b8be6898de4bc9ae68a8a30e694bee588b0e999a4e695b0e590a721
-    expected ':',e4b88de58aa0e58692e58fb7e79a84e5a4a7e7aca8e89b8be5b0b1e698afe4bda0e590a721
-    list index out of range,6c697374e5908ee99da2e79a84e59cb0e696b92ce4b88d2e2e2ee4b88de58fafe4bba5e5868de79c8be4ba862ce4bc9ae59d8fe68e89e79a842ce5919c
+	division by zero,e7aca8e89b8be6898de4bc9ae68a8a30e694bee588b0e999a4e695b0e590a721
+	expected ':',e4b88de58aa0e58692e58fb7e79a84e5a4a7e7aca8e89b8be5b0b1e698afe4bda0e590a721
+	list index out of range,6c697374e5908ee99da2e79a84e59cb0e696b92ce4b88d2e2e2ee4b88de58fafe4bba5e5868de79c8be4ba862ce4bc9ae59d8fe68e89e79a842ce5919c
 
 生成这段16进制编码的方式可以简单的通过一串python代码实现
 
 .. code-block:: python
 
-    print(input().encode('utf-8').hex())
+	print(input().encode('utf-8').hex())
 
 接下来的项目目标以及一些想说的
 -------------------
@@ -105,10 +107,10 @@ Build Instructions
 
 On Unix, Linux, BSD, macOS, and Cygwin::
 
-    ./configure
-    make
-    make test
-    sudo make install
+	./configure
+	make
+	make test
+	sudo make install
 
 This will install Python as ``python3``.
 
@@ -134,11 +136,11 @@ On Windows, see `PCbuild/readme.txt
 If you wish, you can create a subdirectory and invoke configure from there.
 For example::
 
-    mkdir debug
-    cd debug
-    ../configure --with-pydebug
-    make
-    make test
+	mkdir debug
+	cd debug
+	../configure --with-pydebug
+	make
+	make test
 
 (This will fail if you *also* built at the top-level directory.  You should do
 a ``make clean`` at the top-level first.)
@@ -237,7 +239,7 @@ memory.  To enable these tests, run ``make testall``.
 If any tests fail, you can re-run the failing test(s) in verbose mode.  For
 example, if ``test_os`` and ``test_gdb`` failed, you can run::
 
-    make test TESTOPTS="-v test_os test_gdb"
+	make test TESTOPTS="-v test_os test_gdb"
 
 If the failure persists and appears to be a problem with Python rather than
 your environment, you can `file a bug report <https://bugs.python.org>`_ and

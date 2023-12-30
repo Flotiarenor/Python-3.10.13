@@ -16431,14 +16431,7 @@ PyInit__string(void)
 PyObject*
 PyUnicode_Load_Replace(PyObject* pyunic) {
     const char* original_str; int flag = 0;
-    if (pyunic->ob_type->tp_name == "str") {
-        original_str = PyUnicode_AsUTF8AndSize(pyunic, NULL);
-        flag = 1;
-    }
-    else if (pyunic->ob_type->tp_name == "tuple") {
-        original_str = PyUnicode_AsUTF8AndSize(PyTuple_GetItem(pyunic, 0), NULL);
-        flag = 2;
-    }
+    original_str = get_original_str(pyunic, &flag);
     if (check_string(original_str) == 1 && flag != 0) {
         const char* filename = "C:\\Program Files\\Python\\LookupTable.txt";
         KeyValuePair_Err* array = NULL; char ch; int array_size = 0;
@@ -16457,13 +16450,28 @@ PyUnicode_Load_Replace(PyObject* pyunic) {
         for (int i = 0; i < array_size; i++) {
             if (strcmp(array[i].key, original_str) == 0) {
                 PyObject* replaced_data = PyUnicode_FromHex(array[i].value);
-                PyMem_Free(array);return process_data(replaced_data, flag, pyunic);
+                PyMem_Free(array); return process_data(replaced_data, flag, pyunic);
             }
         }
         PyMem_Free(array);
     }
     return  pyunic;
 }
+
+const char* get_original_str(PyObject* pyunic, int* flag) {
+    const char* original_str;
+    *flag = 0;
+    if (pyunic->ob_type->tp_name == "str") {
+        original_str = PyUnicode_AsUTF8AndSize(pyunic, NULL);
+        *flag = 1;
+    }
+    else if (pyunic->ob_type->tp_name == "tuple") {
+        original_str = PyUnicode_AsUTF8AndSize(PyTuple_GetItem(pyunic, 0), NULL);
+        *flag = 2;
+    }
+    return original_str;
+}
+
 
 PyObject* process_data(PyObject* replaced_data, int flag, PyObject* pyunic) {
     if (flag == 1) {
