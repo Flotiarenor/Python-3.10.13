@@ -36,6 +36,43 @@ Python的某个二次元解释器报错版
       File "<stdin>", line 1, in <module>
     ZeroDivisionError: 笨蛋才会把0放到除数吧!
 
+修改了_PyErr_PrintEx函数用于替换
+在unicodeobject.c增加了这几个函数
+.. code-block:: c
+
+	PyAPI_FUNC(PyObject*) PyUnicode_Load_Replace(PyObject* pyunic);//替换的主要函数
+
+	PyAPI_FUNC(PyObject*) process_data(PyObject* replaced_data, int flag, PyObject* pyunic);//元组和字符数据处理
+
+	typedef struct { char* key; char* value; } KeyValuePair_Err;//查找表的结构
+
+	PyAPI_FUNC(PyObject*) PyUnicode_FromHex(const char* hex);//一个16进制转pyunicode的函数
+
+	static int check_string(const char* str)//一个筛选用的旧函数,大概率用处不大了
+
+使用方法按正常python进行直接构建就行,后面修改完成会增加直接安装的版本
+文本文档放在"C:\\Program Files\\Python\\LookupTable.txt",后面可能会考虑修改位置
+
+文本文档的格式是形如::
+
+    division by zero,e7aca8e89b8be6898de4bc9ae68a8a30e694bee588b0e999a4e695b0e590a721
+    expected ':',e4b88de58aa0e58692e58fb7e79a84e5a4a7e7aca8e89b8be5b0b1e698afe4bda0e590a721
+    list index out of range,6c697374e5908ee99da2e79a84e59cb0e696b92ce4b88d2e2e2ee4b88de58fafe4bba5e5868de79c8be4ba862ce4bc9ae59d8fe68e89e79a842ce5919c
+
+生成这段16进制编码的方式可以简单的通过一串python代码实现
+
+.. code-block:: python
+    print(input().encode('utf-8').hex())
+
+接下来的项目目标以及一些想说的
+-------------------
+
+首先是实现一个简单的正则表达式用于查找和替换
+文本文件只是一个粗略的做法,可能以后会使用二进制文件,专门写一个python程序用来编辑
+只匆匆忙忙做了一段时间,可能会出现各种bug,以及这个表其实有点相当小了得想办法增加更多的报错项目
+
+**非常好程序,使我报错不再痛苦**
+
 General Information
 -------------------
 
